@@ -4,7 +4,7 @@ import { Display } from "./Display";
 
 export function Router() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="agi-livestream-switcher">
       <Routes>
         <Route element={<Controller />} index />
         <Route element={<Display />} path="display" />

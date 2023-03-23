@@ -2,7 +2,6 @@
   "name": "@skateresults/agi-livestream-switcher",
   "version": "0.0.0",
   "private": true,
-  "homepage": "./",
   "dependencies": {
     "bootstrap": "5.2.3",
     "classnames": "2.3.2",
