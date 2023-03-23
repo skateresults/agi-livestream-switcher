@@ -23,7 +23,7 @@ export function Controller() {
           </Nav.Item>
         ))}
         <Nav.Item className="ms-auto" >
-          <Nav.Link href="/agi-livestream-switcher/#/display" target="_blank" active={false}>
+          <Nav.Link href="/#/display" target="_blank" active={false}>
             Display
           </Nav.Link>
         </Nav.Item>
