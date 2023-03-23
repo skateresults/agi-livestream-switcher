@@ -1,0 +1,47 @@
+{
+  "name": "@skateresults/agi-livestream-switcher",
+  "version": "0.0.0",
+  "private": true,
+  "homepage": "./",
+  "dependencies": {
+    "bootstrap": "5.2.3",
+    "classnames": "2.3.2",
+    "react": "18.2.0",
+    "react-bootstrap": "2.7.0",
+    "react-dom": "18.2.0",
+    "react-router": "6.8.0",
+    "react-router-dom": "6.8.0"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "start": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build",
+    "lint": "eslint src",
+    "lint-staged": "lint-staged"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.27",
+    "@types/react-dom": "18.0.10",
+    "@typescript-eslint/eslint-plugin": "5.49.0",
+    "@typescript-eslint/parser": "5.49.0",
+    "@vitejs/plugin-react": "3.0.1",
+    "eslint": "8.33.0",
+    "eslint-config-prettier": "8.6.0",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-react": "7.32.1",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "husky": "8.0.3",
+    "lint-staged": "13.1.0",
+    "prettier": "2.8.3",
+    "sass": "1.57.1",
+    "typescript": "4.9.4",
+    "vite": "4.0.4"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json}": [
+      "prettier --write",
+      "eslint"
+    ]
+  }
+}

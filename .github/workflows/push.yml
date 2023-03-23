@@ -1,0 +1,44 @@
+name: Push
+
+on:
+  - push
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-22.04
+
+    concurrency:
+      group: ${{ github.ref }}-${{ github.event_name }}
+      cancel-in-progress: true
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v2.2.4
+        with:
+          version: 7
+      - name: Setup node
+        uses: actions/setup-node@v3.6.0
+        with:
+          node-version-file: ".nvmrc"
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Lint
+        run: pnpm run lint
+
+      - name: Build
+        run: pnpm run build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        with:
+          branch: gh-pages
+          folder: build
+          clean: true
+          dry-run: ${{ github.ref != 'refs/heads/main' }}
+
