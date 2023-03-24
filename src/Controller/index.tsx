@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Nav } from "react-bootstrap";
+import { Button, Nav } from "react-bootstrap";
 import { useSharedState } from "../hooks/useSharedState";
 import { SettingsModal } from "./SettingsModal";
 
@@ -9,29 +9,56 @@ export function Controller() {
 
   return (
     <>
-      <Nav variant="tabs">
+      <Nav variant="tabs" className="align-items-center">
         {state.sites.map((site, siteIndex) => (
           <Nav.Item key={siteIndex}>
             <Nav.Link
               active={state.currentSiteIndex === siteIndex}
               onClick={() => {
-                setState((cur) => ({ ...cur, currentSiteIndex: siteIndex }));
+                if (state.currentSiteIndex === siteIndex) {
+                  return;
+                }
+
+                setState((cur) => ({
+                  ...cur,
+                  currentSiteIndex: siteIndex,
+                  visible: false,
+                }));
               }}
             >
               {site.name}
             </Nav.Link>
           </Nav.Item>
         ))}
-        <Nav.Item className="ms-auto" >
-          <Nav.Link href="/agi-livestream-switcher/#/display" target="_blank" active={false}>
-            Display
-          </Nav.Link>
+        <Nav.Item>
+          <Button
+            size="sm"
+            onClick={() => {
+              setState((cur) => ({ ...cur, visible: !cur.visible }));
+            }}
+            className="ms-5"
+            variant={state.visible ? "success" : "danger"}
+          >
+            {state.visible ? "Visible" : "Hidden"}
+          </Button>
         </Nav.Item>
-        <Nav.Item >
-          <Nav.Link onClick={() => setSettingsModalOpen(true)} active={false}>
-            Settings
-          </Nav.Link>
-        </Nav.Item>
+
+        <Button
+          size="sm"
+          href="/agi-livestream-switcher/#/display"
+          target="_blank"
+          className="ms-auto"
+        >
+          Display
+        </Button>
+
+        <Button
+          onClick={() => setSettingsModalOpen(true)}
+          size="sm"
+          className="ms-1"
+        >
+          Settings
+        </Button>
       </Nav>
       {state.sites.map((site, siteIndex) => (
         <iframe

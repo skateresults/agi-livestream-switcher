@@ -15,6 +15,19 @@ export function SettingsModal({ open, onClose }: Props) {
         <Modal.Title>Settings</Modal.Title>
       </Modal.Header>
       <Modal.Body>
+        <Row className="mb-3">
+          <Col xs={2}>Background color</Col>
+          <Col xs={4}>
+            <Form.Control
+              type="color"
+              value={state.backgroundColor}
+              onChange={(e) =>
+                setState((cur) => ({ ...cur, backgroundColor: e.target.value }))
+              }
+            />
+          </Col>
+        </Row>
+
         {state.sites.map((site, siteIndex) => (
           <Row key={siteIndex} className="mb-3">
             <Col xs={2}>
