@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@types/react': 18.0.28
+  '@types/react': 18.0.29
   '@types/react-dom': 18.0.11
   '@typescript-eslint/eslint-plugin': 5.56.0
   '@typescript-eslint/parser': 5.56.0
@@ -16,7 +16,7 @@ specifiers:
   eslint-plugin-react-hooks: 4.6.0
   husky: 8.0.3
   lint-staged: 13.2.0
-  prettier: 2.8.6
+  prettier: 2.8.7
   react: 18.2.0
   react-bootstrap: 2.7.2
   react-dom: 18.2.0
@@ -30,13 +30,13 @@ dependencies:
   bootstrap: 5.2.3
   classnames: 2.3.2
   react: 18.2.0
-  react-bootstrap: 2.7.2_zula6vjvt3wdocc4mwcxqa6nzi
+  react-bootstrap: 2.7.2_aen5vu2fkbnw3ssyd5drxdxkh4
   react-dom: 18.2.0_react@18.2.0
   react-router: 6.8.0_react@18.2.0
   react-router-dom: 6.8.0_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
-  '@types/react': 18.0.28
+  '@types/react': 18.0.29
   '@types/react-dom': 18.0.11
   '@typescript-eslint/eslint-plugin': 5.56.0_iskin7c6dxqunwflhstekcjqmq
   '@typescript-eslint/parser': 5.56.0_vgl77cfdswitgr47lm5swmv43m
@@ -44,12 +44,12 @@ devDependencies:
   eslint: 8.36.0
   eslint-config-prettier: 8.8.0_eslint@8.36.0
   eslint-plugin-jsx-a11y: 6.7.1_eslint@8.36.0
-  eslint-plugin-prettier: 4.2.1_ose2zoovovx4ulolhifz3tfzx4
+  eslint-plugin-prettier: 4.2.1_ywlv3zveqg2kxfq44lflihh5mm
   eslint-plugin-react: 7.32.2_eslint@8.36.0
   eslint-plugin-react-hooks: 4.6.0_eslint@8.36.0
   husky: 8.0.3
   lint-staged: 13.2.0
-  prettier: 2.8.6
+  prettier: 2.8.7
   sass: 1.60.0
   typescript: 4.9.5
   vite: 4.2.1_sass@1.60.0
@@ -666,17 +666,17 @@ packages:
   /@types/react-dom/18.0.11:
     resolution: {integrity: sha512-O38bPbI2CWtgw/OoQoY+BRelw7uysmXbWvw3nLWO21H1HSh+GOlqPuXshJfjmpNlKiiSDG9cc1JZAaMmVdcTlw==}
     dependencies:
-      '@types/react': 18.0.28
+      '@types/react': 18.0.29
     dev: true
 
   /@types/react-transition-group/4.4.5:
     resolution: {integrity: sha512-juKD/eiSM3/xZYzjuzH6ZwpP+/lejltmiS3QEzV/vmb/Q8+HfDmxu+Baga8UEMGBqV88Nbg4l2hY/K2DkyaLLA==}
     dependencies:
-      '@types/react': 18.0.28
+      '@types/react': 18.0.29
     dev: false
 
-  /@types/react/18.0.28:
-    resolution: {integrity: sha512-RD0ivG1kEztNBdoAK7lekI9M+azSnitIn85h4iOiaLjaTrMjzslhaqCGaI4IyCJ1RljWiLCEu4jyrLLgqxBTew==}
+  /@types/react/18.0.29:
+    resolution: {integrity: sha512-wXHktgUABxplw1+UnljseDq4+uztQyp2tlWZRIxHlpchsCFqiYkvaDS8JR7eKOQm8wziTH/el5qL7D6gYNkYcw==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.3
@@ -1423,7 +1423,7 @@ packages:
       semver: 6.3.0
     dev: true
 
-  /eslint-plugin-prettier/4.2.1_ose2zoovovx4ulolhifz3tfzx4:
+  /eslint-plugin-prettier/4.2.1_ywlv3zveqg2kxfq44lflihh5mm:
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -1436,7 +1436,7 @@ packages:
     dependencies:
       eslint: 8.36.0
       eslint-config-prettier: 8.8.0_eslint@8.36.0
-      prettier: 2.8.6
+      prettier: 2.8.7
       prettier-linter-helpers: 1.0.0
     dev: true
 
@@ -2486,8 +2486,8 @@ packages:
       fast-diff: 1.2.0
     dev: true
 
-  /prettier/2.8.6:
-    resolution: {integrity: sha512-mtuzdiBbHwPEgl7NxWlqOkithPyp4VN93V7VeHVWBF+ad3I5avc0RVDT4oImXQy9H/AqxA2NSQH8pSxHW6FYbQ==}
+  /prettier/2.8.7:
+    resolution: {integrity: sha512-yPngTo3aXUUmyuTjeTUT75txrf+aMh9FiD7q9ZE/i6r0bPb22g4FsE6Y338PQX1bmfy08i9QQCB7/rcUAVntfw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
@@ -2518,7 +2518,7 @@ packages:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
     dev: true
 
-  /react-bootstrap/2.7.2_zula6vjvt3wdocc4mwcxqa6nzi:
+  /react-bootstrap/2.7.2_aen5vu2fkbnw3ssyd5drxdxkh4:
     resolution: {integrity: sha512-WDSln+mG4RLLFO01stkj2bEx/3MF4YihK9D/dWnHaSxOiQZLbhhlf95D2Jb20X3t2m7vMxRe888FVrfLJoGmmA==}
     peerDependencies:
       '@types/react': '>=16.14.8'
@@ -2531,7 +2531,7 @@ packages:
       '@babel/runtime': 7.21.0
       '@restart/hooks': 0.4.9_react@18.2.0
       '@restart/ui': 1.6.2_biqbaboplfbrettd7655fr4n2y
-      '@types/react': 18.0.28
+      '@types/react': 18.0.29
       '@types/react-transition-group': 4.4.5
       classnames: 2.3.2
       dom-helpers: 5.2.1
@@ -2988,7 +2988,7 @@ packages:
       react: '>=15.0.0'
     dependencies:
       '@babel/runtime': 7.21.0
-      '@types/react': 18.0.28
+      '@types/react': 18.0.29
       invariant: 2.2.4
       react: 18.2.0
       react-lifecycles-compat: 3.0.4
@@ -2999,7 +2999,7 @@ packages:
     peerDependencies:
       react: '>=17.0.0'
     dependencies:
-      '@types/react': 18.0.28
+      '@types/react': 18.0.29
       react: 18.2.0
     dev: false
 
