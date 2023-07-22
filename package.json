@@ -2,7 +2,7 @@
   "name": "@skateresults/agi-livestream-switcher",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@8.6.8",
+  "packageManager": "pnpm@8.6.9",
   "dependencies": {
     "bootstrap": "5.3.0",
     "classnames": "2.3.2",
