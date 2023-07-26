@@ -45,7 +45,7 @@ export function useSharedState(): ReturnValue {
       }
       emitter.dispatchEvent(new Event("change"));
     },
-    [state]
+    [state],
   );
 
   return [state, updateState];
